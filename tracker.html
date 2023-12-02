@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover; /* or 'contain' depending on your preference */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #333;
+            background-color: #001f3f;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #003366;
+        }
+
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+    <title>Sortable Dark Blue Table</title>
+</head>
+<body>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>URL</th>
+                <th>Added</th>
+                <th>Screenshot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat the example row 10 times with different URLs -->
+            <tr>
+                <td>Redline</td>
+                <td>https://example.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example2.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example2.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example3.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example3.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example4.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example4.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example5.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example5.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example6.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example6.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example7.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example7.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example8.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example8.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example9.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example9.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+            <tr>
+                <td>Redline</td>
+                <td>https://example10.com</td>
+                <td>10/01/2023</td>
+                <td><a href="http://cdn-example10.com/screenshot.png" target="_blank">View Screenshot</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+</body>
+</html>
+
