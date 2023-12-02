@@ -1,19 +1,22 @@
 #!/bin/bash
 
-# CSV file path
-csv_file="last30days.csv"
-
 # HTML file path
 html_file="tracker.html"
 
+# CSV file path
+csv_file="last30days.csv"
+
+# Default screenshot value
+default_screenshot="screenshot.png"
+
 # Read CSV file and generate HTML rows
 html_rows=""
-while IFS=',' read -r type url ip added; do
+while IFS=',' read -r type url added; do
     html_rows+="<tr>\n"
     html_rows+="    <td>$type</td>\n"
     html_rows+="    <td>$url</td>\n"
-    html_rows+="    <td>$ip</td>\n"
     html_rows+="    <td>$added</td>\n"
+    html_rows+="    <td><a href=\"$default_screenshot\" target=\"_blank\">View Screenshot</a></td>\n"
     html_rows+="</tr>\n"
 done < "$csv_file"
 
